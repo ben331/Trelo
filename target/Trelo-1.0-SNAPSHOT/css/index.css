@@ -1,0 +1,161 @@
+body{
+    border-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container *{
+    width: 20%;
+    background-color:rgb(242, 242, 242);
+}
+
+.labels{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.fields{
+    position: relative;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.fields *{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#taskName{
+    height: 30px;
+    background-color: white;
+}
+
+#taskDesc{
+    height: 200px;
+    background-color: white;
+}
+
+#btAgregar{
+    height: 30px;
+    background-color: rgb(68, 83, 103);
+    color: white;
+    text-align: center;
+}
+
+.panel{
+    padding: 5px;
+}
+
+.taskToDo{
+    padding: 5px;
+}
+
+.taskToDo .btDegrade{
+    visibility: hidden;
+}
+
+.taskDoing{
+    padding: 5px;
+}
+
+.taskDone{
+    padding: 5px;
+}
+
+.taskDone .btAscend{
+    visibility: hidden;
+}
+
+/*About component task*/
+
+.task{
+    position: relative;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.task *{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.taskTitle{
+    font-weight: bold;
+    width: 60%;
+    text-align: left;
+}
+
+.taskDesc{
+    width: 95%;
+    margin: 0 auto;
+    border: 0;
+    resize: vertical;
+}
+
+.DateTime{
+    width: auto;
+    text-align: left;
+    font-size: 11px;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.btDelete{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.btAscend{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(68, 114, 196);
+    border-width: 0;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.btDegrade{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 191, 0);
+    border-width: 0;
+    border-radius: 10px;
+    border-color: white;
+}
+
+/*End about component task*/

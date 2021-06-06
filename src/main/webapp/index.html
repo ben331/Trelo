@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Trelo</title>
+        <link rel="stylesheet" href="css/index.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+        <div class = "container">
+            <div class = "panel">
+                <lab class="labels">Nueva Tarea</lab>
+                <div class= "fields">
+                    <label for="taskName"></label><input type="text" id = "taskName" placeholder="Task name">
+                    <label for="taskDesc"></label><textarea id="taskDesc" cols="30" rows="8" placeholder="Description"></textArea>
+                    <button id = "btAdd">Agregar</button>
+                </div>
+            </div>
+            <div class = "taskToDo" id ="containerToDo">
+                <lab class="labels">To do</lab>
+            </div>
+            <div class = "taskDoing" id = "containerDoing">
+                <lab class="labels">Doing</lab>
+            </div>
+            <div class = "taskDone" id = "containerDone">
+                <lab class="labels">Done</lab>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="js/Task.js"></script>
+    <script src="js/TaskView.js"></script>
+    <script src="js/index.js"></script>
+
+</html>
